@@ -1,0 +1,24 @@
+# Swap configuration. World names require a server restart to change.
+worlds:
+  superflat: superflat   # where everybody lives
+  main: main             # the normal survival world players rotate into
+
+# All durations are in minutes (decimals allowed, handy for testing).
+timing:
+  initial-delay-minutes: 5     # wait before the very first player is chosen
+  session-minutes: 10          # time in the main world
+  extended-session-minutes: 20 # with a Time Extender
+  cooldown-minutes: 5          # gap before the next player is chosen
+  extended-cooldown-minutes: 10
+
+# Chance (in percent) for each modifier to be rolled when a player is chosen.
+# At most one modifier applies per session; the rest of the time there is none.
+modifiers:
+  party: 10.0
+  fortunate: 1.0
+  lootable: 1.0
+  deflation: 2.0
+  inflation: 2.0
+  the_great_reset: 0.1
+  invincible: 10.0
+  damaged: 5.0

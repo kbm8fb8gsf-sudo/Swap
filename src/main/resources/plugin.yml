@@ -1,0 +1,19 @@
+name: Swap
+version: '${project.version}'
+main: dev.swap.SwapPlugin
+api-version: '1.21'
+description: Rotating world access with powerups and modifiers.
+commands:
+  swap:
+    description: Swap plugin commands.
+    usage: /<command> <status|bring|extend|start|end|give|reload>
+permissions:
+  swap.play:
+    description: Use /swap status, bring and extend.
+    default: true
+  swap.admin:
+    description: Use admin sub-commands (start, end, give, reload).
+    default: op
+  swap.bypass:
+    description: Not forced into the superflat world on join.
+    default: false
